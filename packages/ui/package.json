@@ -30,7 +30,7 @@
     "@rollup/plugin-typescript": "^8.3.0",
     "@types/react": "^17.0.39",
     "core-js": "^3.21.0",
-    "react": "^17.0.2",
+    "react": "^18.0.0",
     "rollup": "^2.67.1",
     "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^4.5.5"
@@ -38,6 +38,6 @@
   "peerDependencies": {
     "@babel/runtime": "^7.17.2",
     "core-js": "^3.21.0",
-    "react": "^17.0.2"
+    "react": "^18.0.0"
   }
 }
