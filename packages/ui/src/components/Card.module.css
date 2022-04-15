@@ -1,0 +1,5 @@
+.card {
+  padding: var(--ds-spacing-md);
+  border-radius: .3em;
+  background-color: var(--ds-color-background-discrete);
+}

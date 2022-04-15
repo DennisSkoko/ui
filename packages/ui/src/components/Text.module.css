@@ -1,0 +1,34 @@
+.text {
+  font-family: var(--ds-font-family-body);
+  line-height: var(--ds-font-line-height);
+  margin: 0 0 var(--ds-spacing-md);
+}
+
+.inline,
+.text:last-child {
+  margin: 0;
+}
+
+.sm {
+  font-size: var(--ds-font-size-body-sm);
+}
+
+.md {
+  font-size: var(--ds-font-size-body-md);
+}
+
+.lg {
+  font-size: var(--ds-font-size-body-lg);
+}
+
+.default {
+  color: var(--ds-color-text-default);
+}
+
+.primary {
+  color: var(--ds-color-text-primary);
+}
+
+.centered {
+  text-align: center;
+}

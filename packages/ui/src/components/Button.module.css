@@ -1,0 +1,40 @@
+.button {
+  display: block;
+  font-family: var(--ds-font-family-body);
+  font-size: var(--ds-font-size-body-md);
+  line-height: var(--ds-font-line-height);
+  padding: var(--ds-spacing-xs) var(--ds-spacing-sm);
+  cursor: pointer;
+  border: .0625rem solid var(--ds-color-background-muted);
+  border-radius: .3em;
+  background-color: transparent;
+  position: relative;
+  transition-property: filter;
+  transition-duration: var(--ds-animation-duration-short);
+  transition-timing-function: var(--ds-animation-timing);
+}
+
+.button:hover,
+.button:focus {
+  filter: brightness(115%);
+}
+
+.button:active {
+  filter: brightness(90%);
+  transition: none;
+}
+
+.button:disabled {
+  color: var(--ds-color-text-default);
+  cursor: not-allowed;
+  filter: none;
+  opacity: .5;
+}
+
+.default {
+  color: var(--ds-color-text-default);
+}
+
+.primary {
+  color: var(--ds-color-text-primary);
+}

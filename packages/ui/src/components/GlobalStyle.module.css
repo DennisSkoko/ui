@@ -1,0 +1,53 @@
+:root {
+  --ds-spacing-xl: 3em;
+  --ds-spacing-lg: 1.5em;
+  --ds-spacing-md: 1em;
+  --ds-spacing-sm: .5em;
+  --ds-spacing-xs: .25em;
+
+  --ds-font-family-heading: 'Varela Round', sans-serif;
+  --ds-font-family-body: 'Montserrat', sans-serif;
+
+  --ds-font-size-heading-h1: 2.5rem;
+  --ds-font-size-heading-h2: 2rem;
+  --ds-font-size-heading-h3: 1.75rem;
+  --ds-font-size-heading-h4: 1.5rem;
+  --ds-font-size-heading-h5: 1.25rem;
+  --ds-font-size-heading-h6: 1.125rem;
+  --ds-font-size-heading-weight: normal;
+
+  --ds-font-size-body-lg: 1.3rem;
+  --ds-font-size-body-md: 1.125rem;
+  --ds-font-size-body-sm: 1rem;
+
+  --ds-font-line-height: 1.5em;
+
+  --ds-animation-duration-short: 120ms;
+  --ds-animation-timing: ease;
+
+  --ds-color-background-default: rgb(248, 248, 248);
+  --ds-color-background-discrete: rgb(255, 255, 255);
+  --ds-color-background-muted: rgb(200, 200, 200);
+  --ds-color-background-primary: rgb(233, 118, 10);
+  --ds-color-background-danger: #ff1100;
+
+  --ds-color-text-default: rgb(10, 10, 10);
+  --ds-color-text-primary: rgb(233, 118, 10);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ds-color-background-default: rgb(5, 5, 5);
+    --ds-color-background-discrete: rgb(20, 20, 20);
+    --ds-color-background-muted: rgb(40, 40, 40);
+    --ds-color-background-primary: rgb(255, 123, 0);
+    --ds-color-background-danger: #e92d20;
+
+    --ds-color-text-default: rgb(245, 245, 245);
+    --ds-color-text-primary: rgb(255, 123, 0);
+  }
+}
+
+html {
+  background-color: var(--ds-color-background-default);
+}
