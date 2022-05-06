@@ -1,8 +1,8 @@
 import classNames from 'classnames'
-import { MouseEventHandler, ReactNode } from 'react'
+import { ButtonHTMLAttributes, MouseEventHandler, ReactNode } from 'react'
 import styles from './Button.module.css'
 
-export interface ButtonProps {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
   children?: ReactNode
   color?: 'default' | 'primary'

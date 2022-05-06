@@ -1,8 +1,8 @@
 import classNames from 'classnames'
-import { ReactNode } from 'react'
+import { HTMLAttributes, ReactNode } from 'react'
 import styles from './Text.module.css'
 
-export interface TextProps {
+export interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
   children?: ReactNode
   className?: string
   size?: "sm" | "md" | "lg"
