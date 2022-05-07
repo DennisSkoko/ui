@@ -33,6 +33,7 @@
 
   --ds-color-text-default: rgb(10, 10, 10);
   --ds-color-text-primary: rgb(233, 118, 10);
+  --ds-color-text-danger: rgb(220, 53, 69);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,6 +46,7 @@
 
     --ds-color-text-default: rgb(245, 245, 245);
     --ds-color-text-primary: rgb(255, 123, 0);
+    --ds-color-text-danger: rgb(235, 30, 40);
   }
 }
 

@@ -5,9 +5,9 @@ import styles from './Text.module.css'
 export interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
   children?: ReactNode
   className?: string
-  size?: "sm" | "md" | "lg"
+  size?: 'sm' | 'md' | 'lg'
   centered?: boolean
-  color?: "default" | "primary"
+  color?: 'default' | 'primary' | 'error'
   inline?: boolean
 }
 
@@ -17,8 +17,8 @@ export function Text({ className, size, centered, color, inline, ...props }: Tex
       className={classNames(
         className,
         styles.text,
-        styles[size || "md"],
-        styles[color || "default"],
+        styles[size || 'md'],
+        styles[color || 'default'],
         centered && styles.centered,
         inline && styles.inline
       )}

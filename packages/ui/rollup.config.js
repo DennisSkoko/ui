@@ -11,6 +11,8 @@ export default /** @type {import('rollup').RollupOptions} */ ({
     'components/Card': './src/components/Card.tsx',
     'components/GlobalStyle': './src/components/GlobalStyle.tsx',
     'components/Heading': './src/components/Heading.tsx',
+    'components/Input': './src/components/Input.tsx',
+    'components/InputRadio': './src/components/InputRadio.tsx',
     'components/InputText': './src/components/InputText.tsx',
     'components/Text': './src/components/Text.tsx'
   },

@@ -1,0 +1,39 @@
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(calc(var(--ds-spacing-xs) * -1));
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(calc(var(--ds-spacing-xs) * -1));
+  }
+}
+
+.label {
+  margin-bottom: var(--ds-spacing-xs);
+}
+
+.errorMessage {
+  margin-top: var(--ds-spacing-xs);
+  animation-name: slideOut;
+  animation-timing-function: var(--ds-animation-timing);
+  animation-duration: var(--ds-animation-duration-short);
+}
+
+.errorMessage.active {
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+}

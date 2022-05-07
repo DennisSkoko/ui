@@ -6,7 +6,7 @@
 
 .inline,
 .text:last-child {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .sm {
@@ -27,6 +27,10 @@
 
 .primary {
   color: var(--ds-color-text-primary);
+}
+
+.error {
+  color: var(--ds-color-text-danger);
 }
 
 .centered {
