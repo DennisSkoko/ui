@@ -30,15 +30,13 @@ export function Input({ children, label, errorMessage, ...props }: InputProps) {
         {children}
       </label>
 
-      {delayedErrorMessage && (
-        <Text
-          className={classNames(styles.errorMessage, errorMessage && styles.active)}
-          onAnimationEnd={handleAnimationEnd}
-          color='error'
-        >
-          {delayedErrorMessage}
-        </Text>
-      )}
+      <Text
+        className={classNames(styles.errorMessage, errorMessage && styles.active)}
+        onAnimationEnd={handleAnimationEnd}
+        color='error'
+      >
+        {delayedErrorMessage}
+      </Text>
     </div>
   )
 }

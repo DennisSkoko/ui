@@ -37,3 +37,8 @@
   animation-name: slideIn;
   animation-fill-mode: forwards;
 }
+
+.errorMessage:empty::after {
+  content: ".";
+  visibility: hidden;
+}
